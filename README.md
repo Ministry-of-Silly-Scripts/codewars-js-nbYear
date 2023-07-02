@@ -1,8 +1,8 @@
-# XXXXX kata 
+# Growth of a Populationkata 
 
-XXXXX kata performed by to practice TDD for the Jaguars training at IBM
+Growth of a Population kata performed by to practice TDD for the Jaguars training at IBM
 
-[XXXXXX on CodeWars](https://www.codewars.com/kata/)
+[Growth of a Populationon CodeWars](https://www.codewars.com/kata/563b662a59afc2b5120000c6)
 
 ## Prerequisites
 
