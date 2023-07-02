@@ -23,7 +23,7 @@ More generally given parameters:
 
 the function `nb_year` should return `n` number of entire years needed to get a population greater or equal to `p`.
 
-`aug` is an integer, percent a positive or null floating number, `p0` and `p` are positive integers (> 0)
+`aug` is an integer, `percent` a positive or null floating number, `p0` and `p` are positive integers (> 0)
 
 ```
 Examples:
@@ -35,12 +35,28 @@ Note:
 
 Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter percent is 2 you have to convert it to 0.02.
 
+## Domain Discussions
+
+- input: 
+    - `p0`: initial population (int)
+    - `percent`: population increase per year (null of float)
+    - `aug`: number of inhabitants that comes or leaves each year (int)
+    - `p`: population to equal or surpasse (int)
+- output:
+    -  `n`: number of entire years needed to get a population greater or equal to `p` (int)
+- The total of a population after one year can be calculated by:
+    `Total_after_one_year = p0 + p0 * percent/100 + aug`
+- OBS: the `Total_after_one_year` is a INTEGER: so the final number should be round DOWN (as per examples)
+- The `Total_after_one_year` from the previous year is the `p0` of the following year
+- Repeat the count each year until the total is equal or greater than `p` 
+
 ---
 
 **Label**  
 ✅ done 🚧 WIP ❌ ERROR 🐛 BUG 
 
 ---
+
 
 TODO:
 
@@ -50,5 +66,5 @@ TODO:
     - update NOTES ✅
     - update package.json ✅
     - update code/test files ✅
-- domain discussion 
+- domain discussion ✅
 - perform the 'canary' test just to check if the structure works 
