@@ -82,3 +82,6 @@ TODO:
 
 # Pomodoro 4 🍅:
 - it should return 1 for `p0 = 1000`, `percent = 2`, `aug = 50` and `p = 1070` (`nbYear(1000, 2, 50, 1070)`) ✅
+
+# Pomodoro 5 🍅:
+- it should return 94 for `p0 = 1500000`, `percent = 0.25`, `aug = 100` and `p = 2000000` (`nbYear(1500000, 0.25, 1000, 2000000)`) ✅

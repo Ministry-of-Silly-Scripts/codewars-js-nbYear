@@ -3,13 +3,15 @@ const nbYear = (p0, percent, aug, p) => {
   year_count = 0
 
   do {
-    total = p0 + p0 * percent/100 + aug;
-    p0 = total;
+    growth = p0 * percent/100
+    total = p0 + growth + aug;
+    p0 = Math.floor(total);
     year_count ++;
+
   } while (total < p);
 
   return year_count;
-};
+}
 
 module.exports = {
   nbYear,

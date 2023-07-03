@@ -18,4 +18,12 @@ describe('nbYear', () => {
   test("it should return 1 for p0 = 1000, percentage = 2, aug = 50 and p = 1070", () => {
     expect(nbYear(1000, 2, 50, 1070)).toBe(1);
   });
+
+  test("it should return 94 for p0 = 1500000, percentage = 0.25, aug = 1000 and p = 2000000", () => {
+    expect(nbYear(1500000, 0.25, 1000, 2000000)).toBe(94);
+  });
+
+  test("it should return 90 for p0 = 1000, percentage = null, aug = 100 and p = p0 = 10000", () => {
+    expect(nbYear(1000, null, 100, 10000)).toBe(90);
+  });
 })
