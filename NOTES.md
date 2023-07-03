@@ -74,4 +74,5 @@ TODO:
 - it should return 1 if the `percent`, `aug` and `p0` and `p`are equal ✅
     - ex: nbYear(1000, 0, 0, 1000) = 1
 - it should return 2 if the `percent`, `aug` and `p0` = 1000 and `p`w = 1100 ✅
-    - ex: nbYear(1000, 0, 100, 1200) = 2
+    - ex: nbYear(1000, 0, 100, 1200) = 2 
+- refactor code ✅
