@@ -76,3 +76,9 @@ TODO:
 - it should return 2 if the `percent`, `aug` and `p0` = 1000 and `p`w = 1100 ✅
     - ex: nbYear(1000, 0, 100, 1200) = 2 
 - refactor code ✅
+
+# Pomodoro 3 🍅:
+- it should return 1 for `p0 = 1000`, `percent = 2`, `aug = 50` and `p = 1070` (`nbYear(1000, 2, 50, 1070)`) 🚧
+
+# Pomodoro 4 🍅:
+- it should return 1 for `p0 = 1000`, `percent = 2`, `aug = 50` and `p = 1070` (`nbYear(1000, 2, 50, 1070)`) ✅

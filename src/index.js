@@ -1,12 +1,14 @@
 const nbYear = (p0, percent, aug, p) => {
-  total_first_year = p0 + aug;
+  total = p0;
+  year_count = 0
 
-  if (total_first_year === p) { return 1;}
-  
-  total_second_year = total_first_year + aug;
-  console.log(total_second_year)
+  do {
+    total = p0 + p0 * percent/100 + aug;
+    p0 = total;
+    year_count ++;
+  } while (total < p);
 
-  if (total_second_year === p) { return 2;}
+  return year_count;
 };
 
 module.exports = {
